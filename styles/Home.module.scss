@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 1550px;
+
+
+  .gradientText{
+    background: -webkit-linear-gradient(138.47deg, #FFC7CE 0%, #FFE1E5 0.01%, #E3F5FF 100.1%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .countdownClock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    height: 128px;
+    border: 1px solid;
+    border-color: linear-gradient(267.19deg, #FCE3E9 -2.98%, #E2E1FF 40.78%, #FFDDE6 88.43%);
+    border-radius: 100%;
+    font-size: 32px;
+    line-height: 54px;
+    color: linear-gradient(267.19deg, #FCE3E9 -2.98%, #E2E1FF 40.78%, #FFDDE6 88.43%);
+    margin-top: 48px;
+  }
+}
