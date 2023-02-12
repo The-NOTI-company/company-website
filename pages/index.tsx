@@ -1,20 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 import { classNames } from '../utils/classNames'
-import { useCountdown } from '../utils/countdown'
+import LoadingScreen from '../components/loadingScreen'
+import Countdown from '../components/countdown'
 
 const Home: NextPage = () => {
-  const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
+  const [contentLoaded, setContentLoaded] = useState(false)
 
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
-
-  const [days, hours] = useCountdown(dateTimeAfterThreeDays);
-
-  const totatHours = (days * 24) + hours
-
+  useEffect(() => {
+    setTimeout(() => {
+      setContentLoaded(true) 
+    }, 3000);
+  })
 
   return (
     <div className={styles.container}>
@@ -24,7 +24,9 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={classNames(styles.main, 'relative pb-5')}>
+      { !contentLoaded && <LoadingScreen/>}
+      <div
+        className={classNames(styles.main, 'relative pb-5')}>
         <nav className='px-[120px] pt-5 pb-7 w-full' id='nav'>
           <div className='flex items-center'>
             <img
@@ -36,23 +38,25 @@ const Home: NextPage = () => {
         </nav>
         <main className={ classNames('mt-[66px] h-full flex flex-col items-center self-center')} id='body'>
           <div className='text-center w-[70%]'>
-            <h1 className='text-[48px] leading-[56px] text-[#808080] font-semibold font-clash'>
+            <h1 className='text-[44px] leading-[52px] text-[#808080] font-semibold font-clash'>
               We are Currently under
               <span className={styles.gradientText}> Construction </span>
             </h1>
-            <p className='mt-7 text-[32px] leading-[54px] font-futura font-normal text-[#808080]'>
+            <p className='mt-7 text-[24px] leading-[36px] font-futura font-normal text-[#808080]'>
               The noti company is currently improving its  website, and would be ready to launch in
             </p>
           </div>
           <div className={styles.countdownClock}>
             <div className='m-auto font-clash font-medium'>
-              <span>{ totatHours }</span> hrs
+              <span>
+                <Countdown />
+              </span> hrs
             </div>
           </div>
         </main> 
-        <footer className='flex flex-col items-center mt-[96px]' id='footer'>
+        <footer className='flex flex-col items-center mt-[70px]' id='footer'>
           <h3 className='text-[#808080] font-medium text-[24px] leading-[54px] font-futura'>Contact us</h3>
-          <div className='flex items-center mt-[17px]'>
+          <div className='flex items-center mt-[14px]'>
             <a href='mailto:thenoticompany@gmail.com' target='_blank' rel="noreferrer">
               <img
                 src={'/assets/svg/footer/mail.svg'}
@@ -65,7 +69,7 @@ const Home: NextPage = () => {
                 alt="Twitter"
               />
             </a>
-            <a href='#'>
+            <a href='https://instagram.com/thenoticompany?igshid=YmMyMTA2M2Y='>
               <img
                 src={'/assets/svg/footer/instagram.svg'}
                 alt="Instagram"
