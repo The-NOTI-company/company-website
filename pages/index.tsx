@@ -2,7 +2,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
-import { classNames } from '../utils/classNames'
+// import { classNames } from '../utils/classNames'
 import { useCountdown } from '../utils/countdown'
 
 const Home: NextPage = () => {
@@ -24,13 +24,18 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={classNames(styles.main, 'relative pb-5')}>
+      <div className={styles.countdownClock}>
+        <div className='m-auto font-clash font-medium'>
+          <span>{ totatHours }</span> hrs
+        </div>
+      </div>
+      {/* <div className={classNames(styles.main, 'relative pb-5')}>
         <nav className='px-[120px] pt-5 pb-7 w-full' id='nav'>
           <div className='flex items-center'>
-            {/* <img
+            <img
               src={'/assets/svg/navigation/logo.svg'}
               alt='Noti logo'
-            /> */}
+            />
             <h2 className='text-[17px] leading-[27px] text-[#E0E0E0] ml-4 font-futura'>The noti company</h2>
           </div>
         </nav>
@@ -54,47 +59,47 @@ const Home: NextPage = () => {
           <h3 className='text-[#808080] font-medium text-[24px] leading-[54px] font-futura'>Contact us</h3>
           <div className='flex items-center mt-[17px]'>
             <a href='mailto:thenoticompany@gmail.com' target='_blank' rel="noreferrer">
-              {/* <img
+              <img
                 src={'/assets/svg/footer/mail.svg'}
                 alt="Mail"
-              /> */}
+              />
             </a>
             <a href='https://twitter.com/thenoticompany?s=21&t=aZjZSvIsM6Hfff7jzHoS8A' target='_blank'  className='mx-[53px]' rel="noreferrer">
-              {/* <img
+              <img
                 src={'/assets/svg/footer/twitter.svg'}
                 alt="Twitter"
-              /> */}
+              />
             </a>
             <a href='#'>
-              {/* <img
+              <img
                 src={'/assets/svg/footer/instagram.svg'}
                 alt="Instagram"
-              /> */}
+              />
             </a>
           </div>
         </footer>
         <div className='absolute max-w-[612px] bottom-0'>
-          {/* <img
+          <img
             src='/assets/png/home/blob2.png'
             alt='Blob'
             className=' w-full'
-          /> */}
+          />
         </div>
         <div className='absolute max-w-[300px] top-[200px] right-0'>
-          {/* <img
+          <img
             src='/assets/png/home/blob3.png'
             alt='Blob'
             className=' w-full'
-          /> */}
+          />
         </div>
         <div className='absolute max-w-[150px] top-[100px] left-[150px]'>
-          {/* <img
+          <img
             src='/assets/png/home/blob.png'
             alt='Blob'
             className=' w-full'
-          /> */}
+          />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
