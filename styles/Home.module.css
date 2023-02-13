@@ -29,3 +29,20 @@
   -webkit-text-fill-color: transparent;
   margin-top: 48px;
 }
+
+.scaledown {
+  animation-duration: 3500ms;
+  animation-name: scaledown;
+  animation-delay: 1600ms
+}
+
+  
+@keyframes scaledown {
+  0%{
+    transform: scale(1.5);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}

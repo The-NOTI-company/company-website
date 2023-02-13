@@ -78,21 +78,21 @@ const Home: NextPage = () => {
             </a>
           </div>
         </footer>
-        <div className='absolute max-w-[612px] bottom-0'>
+        <div className={ classNames('absolute max-w-[612px] bottom-0', !contentLoaded ? styles.scaledown : "scale-100")}>
           <img
             src='/assets/png/home/blob2.png'
             alt='Blob'
             className=' w-full'
           />
         </div>
-        <div className='absolute max-w-[300px] top-[200px] right-0'>
+        <div className={ classNames('absolute max-w-[300px] top-[200px] right-0', !contentLoaded ? styles.scaledown : "scale-100")}>
           <img
             src='/assets/png/home/blob3.png'
             alt='Blob'
             className=' w-full'
           />
         </div>
-        <div className='absolute max-w-[150px] top-[100px] left-[150px]'>
+        <div className={ classNames('absolute max-w-[150px] top-[100px] left-[150px]', !contentLoaded ? styles.scaledown : "scale-100")}>
           <img
             src='/assets/png/home/blob.png'
             alt='Blob'
