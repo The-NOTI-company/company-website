@@ -28,7 +28,7 @@ const Loading = () => {
     <>
       {
         loading && (
-          <LoadingScreen/>
+          <LoadingScreen loading={loading} />
         )
       } 
     </>

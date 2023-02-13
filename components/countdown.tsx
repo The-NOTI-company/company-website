@@ -7,8 +7,6 @@ const Countdown = () => {
         let year = new Date().getFullYear();
         const difference = +new Date(`${year}-02-16`) - +new Date();
         let timeLeft = {};
-
-        console.log( new Date() )
     
         if (difference > 0) {
           timeLeft = {

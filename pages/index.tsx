@@ -12,8 +12,9 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      setContentLoaded(true) 
-    }, 3000);
+      setContentLoaded(true)
+    }, 4300);
+
   })
 
   return (
@@ -24,7 +25,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      { !contentLoaded && <LoadingScreen/>}
+      <LoadingScreen loading={contentLoaded}/>
       <div
         className={classNames(styles.main, 'relative pb-5')}>
         <nav className='px-[120px] pt-5 pb-7 w-full' id='nav'>

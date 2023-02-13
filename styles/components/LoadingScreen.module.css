@@ -8,3 +8,21 @@
     z-index: 9999;
     height: 120vh;
 }
+
+.slideout {
+    animation-duration: 3000ms;
+    animation-name: slideout;
+    animation-delay: 1600ms;
+}
+
+  
+@keyframes slideout {
+    0%{
+        width: 100%;
+    }
+
+    100%{
+        left: 100%;
+        width: 100%;
+    }
+}
