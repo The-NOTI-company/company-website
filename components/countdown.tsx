@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react'
 const Countdown = () => {
     const calculateTimeLeft = () => {
         let year = new Date().getFullYear();
-        const difference = +new Date(`${year}-02-16`) - +new Date();
+        const difference = +new Date(`${year}-02-20`) - +new Date();
         let timeLeft = {};
     
         if (difference > 0) {
