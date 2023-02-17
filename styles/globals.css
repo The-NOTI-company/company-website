@@ -20,3 +20,23 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.golddust{
+  background: linear-gradient(180deg, #FDFCFB 0%, #E3D2C4 100%);
+}
+
+.azure{
+  background: linear-gradient(180deg, #FFC7CE 0%, #FFE1E5 0.01%, #E3F5FF 100%);
+}
+
+.enchanment{
+  background: linear-gradient(267.19deg, #FCE3E9 -2.98%, #E2E1FF 40.78%, #FFDDE6 88.43%);
+}
+
+.mystery-001{
+  background: radial-gradient(116.25% 116.25% at -16.25% -16.25%, #808080 0%, #000000 100%);
+}
+
+.mystery-002{
+  background: radial-gradient(100% 100% at 0% 0%, #333333 0%, #141414 100%);
+}
