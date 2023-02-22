@@ -65,9 +65,13 @@ module.exports = {
         'desktop': '1512px',
       }
     },
-    screens: {
+    screens: {  
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'mobile': '428px',
       'desktop': '1512px',
-      'mobile': '428px'
     }
   },
   plugins: [],
