@@ -14,7 +14,7 @@ const Homepage: NextPage = () => {
             desc='The homepage of the NOTI company website'
             showInnerLoading={true}
         >
-            <main className={ styles.container }>
+            <main className={ classNames(styles.container, 'min-h-screen') }>
                 
             </main>
         </DefaultLayout>
