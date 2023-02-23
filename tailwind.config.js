@@ -46,7 +46,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'clash': ["'Clash Display'", "sans-serif"],
-        'futura': ["'Futura Md BT'", "sans-serif"]
+        'futura': ["'Futura PT'", "sans-serif"]
       },
       fontSize: {
         'heading-0': ['240px', '288px'],
