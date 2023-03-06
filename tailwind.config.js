@@ -63,6 +63,7 @@ module.exports = {
       backgroundColor: notiColors,
       maxWidth: {
         'desktop': '1512px',
+        'screen': '1550px'
       }
     },
     screens: {  

@@ -22,6 +22,26 @@ a {
   text-decoration: none;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #1C1C1C; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #808080; 
+}
+
+
 /* Backgrounds */
 
 .golddust{
@@ -51,4 +71,9 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Borders */
+.azure-boder{
+  border-color: linear-gradient(138.47deg, #FFC7CE 0%, #FFE1E5 0.01%, #E3F5FF 100.1%);
 }

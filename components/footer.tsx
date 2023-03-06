@@ -6,7 +6,7 @@ import styles from '../styles/components/footer.module.css'
 
 function Footer() {
     return (
-        <footer className='px-[8%] pt-[80px] pb-[47px]'>
+        <footer className='px-[8%] pt-[80px] pb-[47px]' id='footer'>
             <div className='flex justify-between items-center mb-6'>
                 <div>
                     <div className='relative max-w-[353px] mb-[30px]'>
@@ -41,7 +41,7 @@ function Footer() {
                             Bayajidda Close,<br/>
                             The Trenches.
                         </p>
-                        <a>hi@noticompany.com</a>
+                        <a href="mailto:thenoticompany@gmail.com?subject=Enquiries">thenoticompany@gmail.com</a>
                     </div>
                     <ul>
                         <li className='mb-2'>
@@ -55,17 +55,17 @@ function Footer() {
                         </li>
                     </ul>
                     <ul>
-                        <li className='mb-2'>
+                        {/* <li className='mb-2'>
                             <a href=''>Dribbble</a>
                         </li>
                         <li className='mb-2'>
                             <a href=''>Behance</a>
-                        </li>
+                        </li> */}
                         <li className='mb-2'>
-                            <a href=''>Twitter</a>
+                            <a href='https://twitter.com/thenoticompany?s=20' target="_blank" rel="noreferrer" >Twitter</a>
                         </li>
                         <li>
-                            <a href=''>Instagram</a>
+                            <a href='https://www.instagram.com/thenoticompany/' target="_blank" rel="noreferrer">Instagram</a>
                         </li>
                     </ul>
                 </div>

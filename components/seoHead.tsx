@@ -2,7 +2,7 @@ import Head from "next/head";
 
 const DOMAIN = "https://thenoticompany.com/";
 const DEFAULT_OG_IMAGE =
-  "https://res.cloudinary.com/noticompany/image/upload/v1664799323/Projects/Femi%20Johnsn/portfolio_og.jpg";
+  "https://res.cloudinary.com/noticompany/image/upload/v1677216133/NOTI%20media/website/Thumbnail_jyv1ci.png";
 
 interface SeoHeadProps {
     title: string,
@@ -27,7 +27,7 @@ export default function SeoHead({
     <Head>
       <title key="title">{`${title} | ${siteName}`}</title>
       <meta name="description" content={description} />
-      <meta name="keywords" content="photography, not out to impress, creative, company" />
+      <meta name="keywords" content="noti, not out to impress, creative, company" />
       <meta key="og_type" property="og:type" content={ogType} />
       <meta key="og_title" property="og:title" content={title} />
       <meta key="og_description" property="og:description" content={description} />
