@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '../styles/components/ImageSlider.module.css'
+import styles from '../styles/components/imageSlider.module.css'
 import { classNames } from '../utils/classNames'
 
 interface ImageSliderProps{
