@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 
 const notiColors = {
-  'grey-900': '#050505',
-  'grey-800': '#1C1C1C',
-  'grey-700': '#393939',
-  'grey-600': '#555555',
-  'grey-500': '#606060',
-  'grey-400': '#BDBDBD',
-  'grey-300': '#E0E0E0',
-  'grey-200': '#EEEEEE',
-  'grey-100': '#F5F5F5',
-  'background': '#FAFAFA',
+  'mystery-900': '#050505',
+  'mystery-800': '#1C1C1C',
+  'mystery-700': '#393939',
+  'mystery-600': '#555555',
+  'mystery-500': '#606060',
+  'mystery-400': '#BDBDBD',
+  'mystery-300': '#E0E0E0',
+  'mystery-200': '#EEEEEE',
+  'mystery-100': '#F5F5F5',
+  'mystery-50': '#FAFAFA',
   'titan-900': '#1A237E',
   'titan-800': '#283593',
   'titan-700': '#303F9F',
@@ -46,7 +46,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'clash': ["'Clash Display'", "sans-serif"],
-        'futura': ["'Futura Md BT'", "sans-serif"]
+        'futura': ["'Futura PT'", "sans-serif"]
       },
       fontSize: {
         'heading-0': ['240px', '288px'],
@@ -63,11 +63,16 @@ module.exports = {
       backgroundColor: notiColors,
       maxWidth: {
         'desktop': '1512px',
+        'screen': '1550px'
       }
     },
-    screens: {
+    screens: {  
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'mobile': '428px',
       'desktop': '1512px',
-      'mobile': '428px'
     }
   },
   plugins: [],

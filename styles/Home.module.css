@@ -35,7 +35,7 @@
   animation-delay: 1600ms
 }
 
-  
+
 @keyframes scaledown {
   0%{
     transform: scale(1.5);

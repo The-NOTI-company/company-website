@@ -13,13 +13,36 @@ body{
 }
 
 body {
-  background: linear-gradient(128.14deg, #313131 20.77%, #151515 69.9%);
+  background: #050505;
+  font-family: 'Futura PT', sans-serif;                                          
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #1C1C1C; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #808080; 
+}
+
+
+/* Backgrounds */
 
 .golddust{
   background: linear-gradient(180deg, #FDFCFB 0%, #E3D2C4 100%);
@@ -39,4 +62,18 @@ a {
 
 .mystery-002{
   background: radial-gradient(100% 100% at 0% 0%, #333333 0%, #141414 100%);
+}
+
+/* Gradient texts */
+
+.azure-gradient-text{
+  background: linear-gradient(138.47deg, #FFC7CE 0%, #FFE1E5 0.01%, #E3F5FF 100.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Borders */
+.azure-boder{
+  border-color: linear-gradient(138.47deg, #FFC7CE 0%, #FFE1E5 0.01%, #E3F5FF 100.1%);
 }
