@@ -204,15 +204,15 @@ const Homepage: NextPage = () => {
                         We are a collective of designers, developers, creatives, analysts, and digital specialists, designing brands and creating lasting customer experiences.
                     </h1>
                 </section>
-                <section className='flex justify-between mystery-002 pt-[152px] pb-[232px] px-[85px]'>
-                    <div className='flex flex-col items-center w-full'>
-                        <div className='max-w-[593px]'>
+                <section className='flex justify-between mystery-002 pt-[152px] pb-[232px] px-[5%]'>
+                    <div className='w-full'>
+                        <div className='max-w-[593px] mx-auto'>
                             <img
                                 src='/assets/png/home/07.png'
                                 alt='Blob'
                             />
                         </div>
-                        <ul className='flex flex-col items-center mx-auto h-full mt-24'>
+                        <ul className='flex flex-col items-center h-full mt-24'>
                             {
                                 trustedNotiLogos.map(logo => {
                                     return (
@@ -231,7 +231,7 @@ const Homepage: NextPage = () => {
                             }
                         </ul>
                     </div>
-                    <div className='flex flex-col mt-24 w-[70%]'>
+                    <div className='mt-24 w-[70%]'>
                         <h2 className='uppercase text-[48px] leading-[63px] tracking-[0.01em] font-clash text-mystery-500 font-medium'>
                             Designing
                             <span className='azure-gradient-text'> stories </span>
