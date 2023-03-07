@@ -14,7 +14,8 @@ body{
 
 body {
   background: #050505;
-  font-family: 'Futura PT', sans-serif;                                          
+  font-family: 'Futura PT', sans-serif;      
+  scroll-behavior: smooth;                                    
 }
 
 a {
