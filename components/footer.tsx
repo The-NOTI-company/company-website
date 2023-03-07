@@ -34,7 +34,7 @@ function Footer() {
                 </div>
             </div>
             <div className='flex justify-between'>
-                <div className={classNames('text-mystery-500 w-[50%]',styles.footerLinksContainer )}>
+                <div className={classNames('text-mystery-500 flex flex-wrap' )}>
                     <div className=''>
                         <p className='mb-2'>
                             NOTI HQ,<br/>
@@ -43,29 +43,72 @@ function Footer() {
                         </p>
                         <a href="mailto:thenoticompany@gmail.com?subject=Enquiries">thenoticompany@gmail.com</a>
                     </div>
-                    <ul>
-                        <li className='mb-2'>
-                            <Link href="/portfolio">Portfolio</Link>
+                    <ul className='mx-[96px]'>
+                        <li className='flex items-center mb-2 group'>
+                            <img
+                                src='/assets/svg/footer/star.svg'
+                                alt='Star'
+                                className='mr-4 opacity-0 duration-150 group-hover:opacity-100'
+                            />
+                            <Link href="/portfolio" className='duration-150 group-hover:text-mystery-100'>Portfolio</Link>
                         </li>
-                        <li className='mb-2'>
-                            <Link href="/about">About</Link>
+                        <li className='flex items-center mb-2 group'>
+                            <img
+                                src='/assets/svg/footer/star.svg'
+                                alt='Star'
+                                className='mr-4 opacity-0 duration-150 group-hover:opacity-100'
+                            />
+                            <Link href="/about" className='duration-150 group-hover:text-mystery-100'>About</Link>
                         </li>
-                        <li>
-                            <Link href="/contact">Contact</Link>
+                        <li className='flex items-center group'>
+                            <img
+                                src='/assets/svg/footer/star.svg'
+                                alt='Star'
+                                className='mr-4 opacity-0 duration-150 group-hover:opacity-100'
+                            />
+                            <Link href="/contact" className='duration-150 group-hover:text-mystery-100'>Contact</Link>
                         </li>
                     </ul>
                     <ul>
-                        {/* <li className='mb-2'>
-                            <a href=''>Dribbble</a>
+                        {/* <li className='mb-2 flex items-center group'>
+                            <img
+                                src='/assets/svg/footer/star.svg'
+                                alt='Star'
+                                className='mr-4 opacity-0 duration-150 group-hover:opacity-100'
+                            />
+                            <a href='' className='duration-150 group-hover:text-mystery-100'>
+                                Dribbble
+                            </a>
                         </li>
-                        <li className='mb-2'>
-                            <a href=''>Behance</a>
+                        <li className='mb-2 flex items-center group'>
+                            <img
+                                src='/assets/svg/footer/star.svg'
+                                alt='Star'
+                                className='mr-4 opacity-0 duration-150 group-hover:opacity-100'
+                            />
+                            <a href='' className='duration-150 group-hover:text-mystery-100'>
+                                Behance
+                            </a>
                         </li> */}
-                        <li className='mb-2'>
-                            <a href='https://twitter.com/thenoticompany?s=20' target="_blank" rel="noreferrer" >Twitter</a>
+                        <li className='mb-2 flex items-center group'>
+                            <img
+                                src='/assets/svg/footer/star.svg'
+                                alt='Star'
+                                className='mr-4 opacity-0 duration-150 group-hover:opacity-100'
+                            />
+                            <a href='https://twitter.com/thenoticompany?s=20' target="_blank" rel="noreferrer" className='duration-150 group-hover:text-mystery-100'>
+                                Twitter
+                            </a>
                         </li>
-                        <li>
-                            <a href='https://www.instagram.com/thenoticompany/' target="_blank" rel="noreferrer">Instagram</a>
+                        <li className='flex items-center group'>
+                            <img
+                                src='/assets/svg/footer/star.svg'
+                                alt='Star'
+                                className='mr-4 opacity-0 duration-150 group-hover:opacity-100'
+                            />
+                            <a href='https://www.instagram.com/thenoticompany/' target="_blank" rel="noreferrer" className='duration-150 group-hover:text-mystery-100'>
+                                Instagram
+                            </a>
                         </li>
                     </ul>
                 </div>

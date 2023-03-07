@@ -23,8 +23,8 @@ const Homepage: NextPage = () => {
         const { clientX, clientY } = e
 
         setTrailing({
-            x: clientX - 45,
-            y: clientY - 45
+            x: clientX - 25,
+            y: clientY - 25
         })
         
     }
@@ -64,37 +64,37 @@ const Homepage: NextPage = () => {
             id: 1,
             name: "Malvie",
             imgSrc: '/assets/svg/home/logos/malvie.svg',
-            maxWidth: "140px"
+            maxWidth: "200px"
         },
         {
             id: 2,
             name: "Wac",
             imgSrc: '/assets/svg/home/logos/wac.svg',
-            maxWidth: "160px"
+            maxWidth: "200px"
         },
         {
             id: 3,
             name: "Heart",
             imgSrc: '/assets/svg/home/logos/heart.svg',
-            maxWidth: "84px"
+            maxWidth: "100px"
         },
         {
             id: 4,
             name: "Radr",
             imgSrc: '/assets/svg/home/logos/radr.svg',
-            maxWidth: "160px"
+            maxWidth: "200px"
         },
         {
             id: 5,
             name: "Solarsoft",
             imgSrc: '/assets/svg/home/logos/solarsoft.svg',
-            maxWidth: "168px"
+            maxWidth: "200px"
         },
         {
             id: 6,
             name: "Vobb",
             imgSrc: '/assets/svg/home/logos/vobb.svg',
-            maxWidth: "150px"
+            maxWidth: "200px"
         },
     ]
 
@@ -143,7 +143,7 @@ const Homepage: NextPage = () => {
             desc='The homepage of the NOTI company website'
             showInnerLoading={true}
         >
-            <main className={ classNames(styles.container, "mt-[156px]") } id="homepage">
+            <main className={ classNames(styles.container, "mt-[156px]") }>
                 <section className='my-[68px] flex justify-between px-[8%]'>
                     <div className='w-[55%]'>
                         <h1 className='text-[64px] leading-[90px] tracking-[0.01em] mb-6 font-clash font-bold'>
@@ -204,29 +204,22 @@ const Homepage: NextPage = () => {
                         We are a collective of designers, developers, creatives, analysts, and digital specialists, designing brands and creating lasting customer experiences.
                     </h1>
                 </section>
-                <section className='mystery-002 pt-[152px] pb-[232px] px-[85px]'>
-                    <div className='flex justify-between items-center'>
-                        <div className='max-w-[593px]'>
+                <section className='flex justify-between mystery-002 pt-[152px] pb-[232px] px-[5%]'>
+                    <div className='w-full'>
+                        <div className='max-w-[593px] mx-auto'>
                             <img
                                 src='/assets/png/home/07.png'
                                 alt='Blob'
                             />
                         </div>
-                        <h2 className='uppercase text-[48px] leading-[63px] tracking-[0.01em] font-clash text-mystery-500 w-[40%] font-medium'>
-                            Designing
-                            <span className='azure-gradient-text'> stories </span>
-                            that matter through...
-                        </h2>
-                    </div>
-                    <div className='flex justify-around mt-24'>
-                        <ul className='flex flex-col items-center mx-auto h-full'>
+                        <ul className='flex flex-col items-center h-full mt-24'>
                             {
                                 trustedNotiLogos.map(logo => {
                                     return (
                                         <li
                                             key={logo.id}
                                             style={{ maxWidth: logo.maxWidth }}
-                                            className={ classNames("my-14 first:mt-8 last:mb-0 px-5 opacity-10 duration-200 hover:opacity-100")}>
+                                            className={ classNames("my-[50px] first:mt-8 last:mb-0 px-5 opacity-10 duration-200 hover:opacity-100")}>
                                             <img
                                                 className={'w-full'}
                                                 src={logo.imgSrc}
@@ -237,7 +230,14 @@ const Homepage: NextPage = () => {
                                 } )
                             }
                         </ul>
-                        <ul className='w-[40%]'>
+                    </div>
+                    <div className='mt-24 w-[70%]'>
+                        <h2 className='uppercase text-[48px] leading-[63px] tracking-[0.01em] font-clash text-mystery-500 font-medium'>
+                            Designing
+                            <span className='azure-gradient-text'> stories </span>
+                            that matter through...
+                        </h2>
+                        <ul className='mt-[240px]'>
                             {
                                 notiFeatures.map(feature => {
                                     return (

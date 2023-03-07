@@ -36,11 +36,11 @@ function DefaultLayout({ title, desc, showInnerLoading=false, children }: Layout
             />
             {showInnerLoading ? <LoadingScreen loading={contentLoaded} /> : null}
             
-            <div className={ classNames(styles.layout, "max-w-screen")}>
+            <div className={ classNames(styles.layout, "max-w-desktop")}>
                 {/* <SmoothScroll> */}
                 <Navigation />
                 <MobileView/>
-                <div className='hidden lg:block'>
+                <div className='hidden lg:block' id="main">
                     <>
                         { children }
                     </>

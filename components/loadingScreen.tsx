@@ -13,6 +13,7 @@ const LoadingScreen = ({ loading }:LoadingProps ) => {
                 loop
                 muted
                 autoPlay
+                controls={false}
                 playsInline
                 width="100%"
                 height="100%"
