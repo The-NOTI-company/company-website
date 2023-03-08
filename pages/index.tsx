@@ -4,7 +4,7 @@ import type { NextPage } from 'next'
 import { useState, useRef } from 'react'
 import styles from '../styles/Homepage.module.css'
 import { classNames } from '../utils/classNames'
-import DefaultLayout from '../components/layouts/defaultLayout'
+import PageLayout from '../components/layouts/pageLayout'
 import {projects} from '../data/projects' 
 import ProjectPreview from '../components/projectPreview'
 import FaqList from '../components/faqList'
@@ -138,12 +138,12 @@ const Homepage: NextPage = () => {
 
 
     return (
-        <DefaultLayout
+        <PageLayout
             title='Home'
             desc='The homepage of the NOTI company website'
             showInnerLoading={true}
         >
-            <main className={ classNames(styles.container, "mt-[156px]") }>
+            <main className={ classNames(styles.container, "mt-[156px]") } data-scroll-section>
                 <section className='my-[68px] flex justify-between px-[8%]'>
                     <div className='w-[55%]'>
                         <h1 className='text-[64px] leading-[90px] tracking-[0.01em] mb-6 font-clash font-bold'>
@@ -389,7 +389,7 @@ const Homepage: NextPage = () => {
                     </div>
                 </section>
             </main>
-        </DefaultLayout>
+        </PageLayout>
     )
 }
 

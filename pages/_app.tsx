@@ -3,6 +3,9 @@ import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import LoadingScreen from '../components/loadingScreen'
+import DefaultLayout from '../components/layouts/defaultLayout'
+import Lenis from "@studio-freight/lenis";
+
 
 const Loading = () => {
   const router = useRouter()
@@ -38,11 +41,34 @@ const Loading = () => {
 
 function MyApp({ Component, pageProps }: AppProps) {
 
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.8,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      infinite: false,
+      smooth: true,
+    })
+    
+    
+    //get scroll value
+    lenis?.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+      console.log({ scroll, limit, velocity, direction, progress })
+    })
+    
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    
+    requestAnimationFrame(raf)
+  })
+
   return (
-    <>
-      <Loading />
+    <DefaultLayout>
+      {/* <Loading /> */}
       <Component {...pageProps} />
-    </>
+    </DefaultLayout>
   )
 }
 
