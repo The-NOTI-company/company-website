@@ -6,7 +6,7 @@ import styles from '../styles/components/footer.module.css'
 
 function Footer() {
     return (
-        <footer className='px-[8%] pt-[80px] pb-[47px]' id='footer'>
+        <footer className='px-[8%] pt-[80px] pb-[47px]' id='footer' data-scroll-section>
             <div className='flex justify-between items-center mb-6'>
                 <div>
                     <div className='relative max-w-[353px] mb-[30px]'>
@@ -122,7 +122,7 @@ function Footer() {
                     <h4 className='text-paragraph-b text-mystery-500'>THENOTICOMPANY</h4>
                 </div>
             </div>
-
+            <div className='h-[150px]'></div>
         </footer>
     )
 }

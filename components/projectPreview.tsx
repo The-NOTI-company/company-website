@@ -14,7 +14,7 @@ interface ProjectPreviewProps {
 
 function ProjectPreview({ id, title, slug, imgSrc, roles }:ProjectPreviewProps) {
     return (
-        <Link href={`/projects/${slug}`}>
+        <Link href={`/projects/${slug}`} >
             <div className={
                 classNames(
                     "flex flex-col mb-[134px] max-w-[588px]",
