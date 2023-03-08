@@ -176,6 +176,7 @@ const Homepage: NextPage = () => {
                         <video
                             ref={reelVideo}
                             onClick={togglePlay}
+                            poster={"/assets/png/video-poster.png"}
                             width="100%"
                             height="100%"
                         >
