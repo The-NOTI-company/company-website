@@ -9,10 +9,11 @@ import { classNames } from '../../utils/classNames'
 
 
 interface LayoutProps {
-    children : ReactNode
+    children: ReactNode,
+    showFooter? : boolean
 }
 
-function DefaultLayout({ children }: LayoutProps) {
+function DefaultLayout({ children, showFooter = true }: LayoutProps) {
     // const [showBottomNav, setShowBottomNav] = useState(true)
 
 
@@ -28,7 +29,7 @@ function DefaultLayout({ children }: LayoutProps) {
                         <BottomNavigation />
                     </HideDuring>
                 </HideOn> */}
-                <Footer/>
+                { showFooter ? <Footer/> : null}
             </div>
         </div>
     )
