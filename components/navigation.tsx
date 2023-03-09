@@ -1,11 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
 import { HideOn } from "react-hide-on-scroll"
+import { useRouter } from 'next/router'
 
 const Navigation = () => {
+
+    function ActiveLink({ children, href }) {
+        const router = useRouter()
+        const isSamePage = router.asPath === href 
+      
+        const handleClick = (e) => {
+            e.preventDefault()
+            if (isSamePage) {
+                router.reload()
+            }
+            router.push(href)
+        }
+      
+        return (
+          <a href={href} onClick={handleClick} >
+            {children}
+          </a>
+        )
+    }
+
     return (
         <nav className='flex items-center justify-between px-[4%] pt-5 pb-7 w-full bg-mystery-900 lg:bg-transparent lg:px-[120px] fixed z-20 top-0' id='nav'>
-            <Link href={"/"}>
+            <Link href={"/"} >
                 <div className='flex'>
                     <img
                         src={'/assets/svg/navigation/logo.svg'}
@@ -18,13 +39,13 @@ const Navigation = () => {
             </Link>
             <ul className="font-futura hidden lg:flex">
                 <li className="p-2 text-mystery-300">
-                    <Link href="/about"> About </Link>
+                    <ActiveLink href="/about"> About </ActiveLink>
                 </li>
                 <li className="p-2 text-mystery-300 mx-10">
-                    <Link href="/portfolio"> Portfolio </Link>
+                    <ActiveLink href="/portfolio"> Portfolio </ActiveLink>
                 </li>
                 <li className="p-2 text-mystery-300">
-                    <Link href="/contact"> Contact </Link>
+                    <ActiveLink href="/contact"> Contact </ActiveLink>
                 </li>
             </ul>
             <div className="hidden">

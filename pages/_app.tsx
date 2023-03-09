@@ -40,7 +40,8 @@ const Loading = () => {
 
 
 function MyApp({ Component, pageProps }: AppProps) {
-
+  const router = useRouter()
+  const pathsToHideFooter = ["/404"]
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -52,9 +53,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     
     
     //get scroll value
-    lenis?.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
-      console.log({ scroll, limit, velocity, direction, progress })
-    })
+    // lenis?.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+    //   console.log({ scroll, limit, velocity, direction, progress })
+    // })
     
     function raf(time) {
       lenis.raf(time)
@@ -65,8 +66,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   })
 
   return (
-    <DefaultLayout>
-      {/* <Loading /> */}
+    <DefaultLayout
+      showFooter={!pathsToHideFooter.includes(router.pathname)}
+    >
+      <Loading />
       <Component {...pageProps} />
     </DefaultLayout>
   )
