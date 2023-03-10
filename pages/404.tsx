@@ -6,7 +6,7 @@ function NotFound() {
         <PageLayout
             title='Future page'
             desc='This page is in the future'
-            showInnerLoading={false}
+            showInnerLoading={true}
         >
             <main className='mt-[50px] mb-[190px] h-full'>
                 <section className='px-[8%]'>
@@ -29,7 +29,7 @@ function NotFound() {
                         </a>
                     </div>
                     <p className='uppercase font-medium text-mystery-400 text-[20px] leading-[27px] w-[50%]'>
-                        This page currently exists in the future.
+                        This page currently exists in the future.<br/>
                         Could be a few hours, a few days or a few weeks.
                         But right now, you get to imagine this page however you it to be.
                         <br/>
