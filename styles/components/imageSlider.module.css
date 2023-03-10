@@ -34,6 +34,6 @@
   }
   100% {
     /* Multiply the $anim-duration by 1.891 to get an estimate translateY %  */
-    transform: translate(0, -122.95%);
+    transform: translate(0, -101.95%);
   }
 }

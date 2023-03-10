@@ -31,7 +31,7 @@ function NotFound() {
                     <p className='uppercase font-medium text-mystery-400 text-[20px] leading-[27px] w-[50%]'>
                         This page currently exists in the future.<br/>
                         Could be a few hours, a few days or a few weeks.
-                        But right now, you get to imagine this page however you it to be.
+                        Right now, you get to imagine this page however you want it to be.
                         <br/>
                         <br />
                         <br/>
