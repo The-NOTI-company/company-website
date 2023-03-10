@@ -28,11 +28,12 @@ function MobileView() {
       <div className='absolute top-0 right-0 bg-[#050505] w-full h-full opacity-70 z-[3]'></div>
       <div className={ classNames( "overflow-hidden absolute w-full h-full top-0 right-0 -z-0")}>
         <div className='rotate-[60deg] flex gap-[16px] min-w-[150%] h-[100vh]'>
-          <ImageSlider pictures={reelSetOne} iterations={4} direction="reverse" className="h-[150vh]" />
-          <ImageSlider pictures={reelSetOne} iterations={4} direction="normal" className="h-[150vh]" />
-          <ImageSlider pictures={reelSetTwo} iterations={4} direction="reverse" className="h-[150vh]" />
-          <ImageSlider pictures={reelSetThree} iterations={4} direction="normal" className="h-[150vh]" />
-          <ImageSlider pictures={reelSetOne} iterations={4} direction="reverse" className="h-[150vh]" />
+          <ImageSlider pictures={reelSetThree} iterations={5} direction="reverse" className="h-[150vh]" />
+          <ImageSlider pictures={reelSetOne} iterations={5} direction="normal" className="h-[150vh]" />
+          <ImageSlider pictures={reelSetTwo} iterations={5} direction="reverse" className="h-[150vh]" />
+          <ImageSlider pictures={reelSetThree} iterations={5} direction="normal" className="h-[150vh]" />
+          <ImageSlider pictures={reelSetTwo} iterations={5} direction="reverse" className="h-[150vh]" />
+          <ImageSlider pictures={reelSetOne} iterations={5} direction="normal" className="h-[150vh]" />
         </div>
       </div>
     </div>
