@@ -10,7 +10,7 @@ function MobileView() {
 
   return (
     <div className='w-full h-screen relative flex lg:hidden'>
-      <div className=' flex flex-col mt-[156px] items-center text-center justify-self-center self-center relative w-full z-10'>
+      <div className=' flex flex-col mt-[140px] items-center text-center justify-self-center self-center relative w-full z-10'>
         <div className='mb-[50px]'>
           <img
             src='/assets/svg/mobile.svg'
